@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-</head>
 <body>
     <h1>insert very important top secret handshakes pb data :troll:</h1>
-    <marquee>pozdor</marquee>
-
-    <h2>powiekszony</h2>
+    <div id="levels">
+        <script>
+            totalTime = 0
+            ytlink = 1;
+            for (i = 0; i <= 29; i++){
+                if(L[i][2] == "Unknown" || L[i][3] == false){
+                    document.write(`<div class="level unrecorded">Level ${L[i][0]} <br> ${L[i][1]}s <br> ${L[i][2]} <br></a></div>`);
+                }
+                else{
+                    document.write(`<div class="level"><a class="hasLink" href="https://www.youtube.com/embed/?listType=playlist&list=PLQ9po8pn0ZnnnoaZmiD44dKhMQr2KAwnk&index=${ytlink}">Level ${L[i][0]} <br> ${L[i][1]}s <br> ${L[i][2]} <br></a></div>`);
+                    ytlink++;
+                };
+            totalTime = parseFloat(L[i][1]) + totalTime;
+            
+            }
+            timeMinutes = Math.floor(totalTime/60) + totalTime%60;
+            document.write(`<br><div id="SumOfBest">Sum Of Best: ${totalTime} (${Math.floor(totalTime/60)}:${Math.round((totalTime%60)*100)/100})</div>`);
+            
+      </script>
+    </div>
+    <a id="ytlabel">My current PB:</a><br><br>
+    <div id="yt">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/ZX5-UQUQtaQ?si=F5INcRRn0zIH20na&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
