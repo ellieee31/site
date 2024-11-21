@@ -14,14 +14,12 @@
         <script>
             totalTime = 0
             totalTimeModa = 0
-            ytlink = 1;
             for (i = 0; i <= 29; i++) {
                 if (L[i][2] == "Unknown" || L[i][4] == false) {
                     document.write(`<div class="level unrecorded">Level ${L[i][0]} <br> ${L[i][1]}s <br> ${L[i][2]} <br></a></div>`);
                 }
                 else {
-                    document.write(`<div class="level"><a class="hasLink" href="https://www.youtube.com/embed/?listType=playlist&list=PLQ9po8pn0ZnnnoaZmiD44dKhMQr2KAwnk&index=${ytlink}">Level ${L[i][0]} <br> ${L[i][1]}s <br> ${L[i][2]} <br></a></div>`);
-                    ytlink++;
+                    document.write(`<div class="level"><a class="hasLink" href="https://www.youtube.com/embed/?listType=playlist&list=PLQ9po8pn0ZnnnoaZmiD44dKhMQr2KAwnk&index=${i+1}">Level ${L[i][0]} <br> ${L[i][1]}s <br> ${L[i][2]} <br></a></div>`);
                 };
                 totalTime = parseFloat(L[i][1]) + totalTime;
                 totalTimeModa = parseFloat(M[i][1]) + totalTimeModa;
