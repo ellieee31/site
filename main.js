@@ -7,7 +7,7 @@
         L[5] = ['05', '04.100', '24 Oct 2024', true, true];
         L[6] = ['06', '04.600', 'Unknown', false, true];
         L[7] = ['07', '02.260', '24 Oct 2024', true, true];
-        L[8] = ['08', '02.680', 'Unknown', false, true];
+        L[8] = ['08', '02.660', 'Unknown', false, true];
         L[9] = ['09', '02.220', 'Unknown', false, false];
         L[10] = ['10', '04.260', 'Unknown', false, false];
         L[11] = ['11', '04.250', '19 Feb 2024', true, true];
@@ -19,7 +19,7 @@
         L[17] = ['17', '03.900', '23 Oct 2024', true, true];
         L[18] = ['18', '06.460', 'Unknown', false, true];
         L[19] = ['19', '07.050', 'Unknown', false, false];
-        L[20] = ['20', '01.150', '24 Oct 2024', true, true];
+        L[20] = ['20', '01.110', '24 Oct 2024', true, true];
         L[21] = ['21', '08.390', '22 Sep 2024', true, false];
         L[22] = ['22', '03.450', '24 Oct 2024', true, true];
         L[23] = ['23', '03.800', '22 Sep 2024', true, true];
