@@ -133,11 +133,15 @@ function generateLevel() {
     document.getElementById('level').textContent = LevelCoords[levelID].join(" ");
     document.getElementById('stored').textContent = stored;
     if (x = 1) {
-        addEventListener("keypress", function (e) {
+addEventListener("keydown", function (e) {
             stored = stored + e.key;
             document.getElementById('level').textContent = LevelCoords[levelID].join(" ");
             document.getElementById('stored').textContent = stored;
-            if (stored.length == 2) {
+            if(e.key == "Backspace"){
+                stored = "";
+                document.getElementById('stored').textContent = stored;
+            }
+            if (stored.length >= 2) {
                 if (stored == levelID) {
                     document.getElementById("centerLevel").style.backgroundColor = "#0A0"
                     win += 1;
@@ -157,7 +161,6 @@ function generateLevel() {
             }
         })
     }
-
 }
 function giveHint() {
 
