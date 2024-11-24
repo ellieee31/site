@@ -139,3 +139,40 @@ a.hasLink:hover{
 .unrecorded{
     color: var(--accent-700);
 }
+#centerLevel{
+    height: 30vh;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#prevStats{
+    font-size: 40px;
+    display: flex;
+}
+a#stored{
+    height: 20vh;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#subtitle{
+    font-size: 12px;
+    font-weight: normal;
+}
+#buttonStartLevel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hint{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#hintDraw{
+    width:600px;
+    height: 250px;
+    overflow: hidden;
+}
