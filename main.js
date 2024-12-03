@@ -134,13 +134,13 @@ function generateLevel() {
     document.getElementById('stored').textContent = stored;
     if (x = 1) {
 addEventListener("keydown", function (e) {
-            stored = stored + e.key;
-            document.getElementById('level').textContent = LevelCoords[levelID].join(" ");
-            document.getElementById('stored').textContent = stored;
-            if(e.key == "Backspace"){
+                if(e.key == "Backspace"){
                 stored = "";
                 document.getElementById('stored').textContent = stored;
             }
+            stored = stored + e.key.replace(/[^0-9]/g,'');
+            document.getElementById('level').textContent = LevelCoords[levelID].join(" ");
+            document.getElementById('stored').textContent = stored;
             if (stored.length >= 2) {
                 if (stored == levelID) {
                     document.getElementById("centerLevel").style.backgroundColor = "#0A0"
