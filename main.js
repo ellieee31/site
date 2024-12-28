@@ -129,7 +129,7 @@ function generateLevel() {
     document.getElementById("hint").style.display = "flex"
     x = 1;
     stored = "";
-    levelID = Math.floor(Math.random() * (29 - 1) + 0);
+    levelID = Math.floor(Math.random() * 30);
     document.getElementById('level').textContent = LevelCoords[levelID].join(" ");
     document.getElementById('stored').textContent = stored;
     if (x = 1) {
@@ -155,7 +155,7 @@ addEventListener("keydown", function (e) {
                 roundsPlayed += 1;
                 document.getElementById("prevStats").textContent = "Previous: Level " + levelID + " " + LevelCoords[levelID].join(" ") + " ||| Guess: " + stored + " ||| Win ratio: " + win + "/" + roundsPlayed + " (" + Math.round((win / roundsPlayed) * 10000) / 100 + "%)";
                 stored = "";
-                levelID = Math.floor(Math.random() * (29 - 1) + 0);
+                levelID = Math.floor(Math.random() * 30);
                 document.getElementById('level').textContent = LevelCoords[levelID].join(" ");
 
             }
